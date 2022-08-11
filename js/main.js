@@ -21,7 +21,9 @@ function checkWinner() {
         const circle4 = circles[winningCombos[i][3]]
 
         if (circle1.classList.contains('player1') && circle2.classList.contains('player1') && circle3.classList.contains('player1') && circle4.classList.contains('player1')) {
-            message.innerHTML
+            message.innerHTML = "Winner: Player 1!"
+        } else if (circle1.classList.contains('player2') && circle2.classList.contains('player2') && circle3.classList.contains('player2') && circle4.classList.contains('player2')){
+            message.innerHTML = "Winner: Player 2!"
         }
     }
 }
