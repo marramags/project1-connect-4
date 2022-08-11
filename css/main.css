@@ -3,6 +3,7 @@
     height: 120px;
     width: 140px;
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -11,4 +12,18 @@
     width: 20px;
     background-color: darkseagreen;
 
+}
+
+.player1 {
+    background-color: darkseagreen;
+    border-radius: 50%;
+}
+
+.player2 {
+    background-color: gold;
+    border-radius: 50%;
+}
+
+.taken {
+    
 }
