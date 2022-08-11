@@ -1,11 +1,37 @@
 // alert('I can do this!')
 const circles = document.querySelectorAll('.gameBoard div');
-const message = document.getElementById('results');
+const message = document.getElementById('message');
 const currPlayer = document.getElementById('currPlayer')
 let playerTurn = 1;
 
 const winningCombos =[
+    [0, 7, 14, 21],
+    [7, 14, 21, 28],
+    [14, 21, 28, 35],
 
+    [1, 8, 15, 22],
+    [8, 15, 22, 29,],
+    [15, 22, 29, 36],
+
+    [2, 9, 16, 23],
+    [9, 16, 23, 30],
+    [16, 23, 30, 37],
+
+    [3, 10, 17, 25],
+    [10, 17, 25, 31],
+    [17, 25, 31, 38],
+
+    [4, 11, 18, 25],
+    [11, 18, 25, 32],
+    [18, 25, 32, 39],
+
+    [5, 12, 19, 26],
+    [12, 19, 26, 33],
+    [19, 26, 33, 40],
+
+    [6, 13, 20, 27],
+    [13, 20, 27, 34],
+    [20, 27, 34, 41],
 ]
 
 
