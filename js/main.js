@@ -15,7 +15,7 @@ for (let i = 0; i < circles.length; i++){
             } else if (playerTurn == 2) {
                 circles[i].classList.add('filled')
                 circles[i].classList.add('player2')
-                playerTurn == 1
+                playerTurn = 1
                 currPlayer.innerHTML = playerTurn
             }
     } else
