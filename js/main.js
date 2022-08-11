@@ -1,8 +1,32 @@
 // alert('I can do this!')
 const circles = document.querySelectorAll('.gameBoard div');
-const results = document.getElementById('results');
+const message = document.getElementById('results');
 const currPlayer = document.getElementById('currPlayer')
 let playerTurn = 1;
+
+const winningCombos =[
+
+]
+
+
+function checkWinner() {
+    // winningCombos.forEach(space => {
+    //     const circle1 = circles[winningCombos[space][0]
+    //     ]
+    // })
+    for (let i = 0; i < winningCombos.length; i++){
+        const circle1 = circles[winningCombos[i][0]]
+        const circle2 = circles[winningCombos[i][1]]
+        const circle3 = circles[winningCombos[i][2]]
+        const circle4 = circles[winningCombos[i][3]]
+
+        if (circle1.classList.contains('player1') && circle2.classList.contains('player1') && circle3.classList.contains('player1') && circle4.classList.contains('player1')) {
+            message.innerHTML
+        }
+    }
+}
+
+
 
 for (let i = 0; i < circles.length; i++){
         circles[i].addEventListener('click', () => {
@@ -18,8 +42,9 @@ for (let i = 0; i < circles.length; i++){
                 playerTurn = 1
                 currPlayer.innerHTML = playerTurn
             }
-    } else
-        results.innerHTML = "nope"   
+         } else
+            message.innerHTML = "nope"
+            checkWinner()   
         }) 
         
     };
