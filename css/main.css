@@ -8,13 +8,13 @@
 }
 
 .results{
-    
+
 }
 
 .gameBoard div {
     height: 20px;
     width: 20px;
-    background-color: darkseagreen;
+    /* background-color: darkseagreen; */
 
 }
 
@@ -28,6 +28,6 @@
     border-radius: 50%;
 }
 
-.taken {
+.filled {
 
 }
