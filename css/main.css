@@ -1,11 +1,8 @@
-.gameBoard {
-    border: 1px solid black;
-    height: 120px;
-    width: 140px;
-    display: flex;
-    flex-wrap: wrap;
+:root {
+    --main-font-family: 'Poppins', sans-serif;
+  }
 
-}
+
 
 h1 {
     color: #9667AB;
@@ -13,9 +10,29 @@ h1 {
     font-size: 80px;
     margin: 10px 0 0 0;
     font-family: 'Righteous', cursive;
+
 }
 
-.message{
+h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--main-font-family);
+
+}
+
+#message{
+    font-size: 20px;
+    font-family: var(--main-font-family);
+
+}
+
+.gameBoard {
+    border: 1px solid black;
+    height: 220px;
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
 
 }
 
