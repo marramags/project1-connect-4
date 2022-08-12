@@ -71,7 +71,7 @@ const winningCombos =[
 
     [3, 9, 15, 21],
     [4, 10, 16, 22],
-    [10, 16, 22, 27],
+    [10, 16, 22, 28],
     [5, 11, 17, 23,],
     [11, 17, 23, 29],
     [17, 23, 29, 35],
@@ -79,33 +79,11 @@ const winningCombos =[
     [12, 18, 24, 30],
     [18, 24, 30, 36],
     [13, 19, 25, 31],
-    [19, 26, 32, 38],
+    [19, 25, 31, 37],
     [20, 26, 32, 38]
-
-
 ]
 
 
-function checkWinner() {
-    winningCombos.forEach((space, idx) => {
-        const circle1 = circles[space,[idx]]
-        console.log(circle1)
-
-    })
-    for (let i = 0; i < winningCombos.length; i++){
-        const circle1 = circles[winningCombos[i][0]]
-        console.log(circle1)
-        const circle2 = circles[winningCombos[i][1]]
-        const circle3 = circles[winningCombos[i][2]]
-        const circle4 = circles[winningCombos[i][3]]
-
-        if (circle1.classList.contains('player1') && circle2.classList.contains('player1') && circle3.classList.contains('player1') && circle4.classList.contains('player1')) {
-            message.innerHTML = "Winner: Player 1!"
-        } else if (circle1.classList.contains('player2') && circle2.classList.contains('player2') && circle3.classList.contains('player2') && circle4.classList.contains('player2')){
-            message.innerHTML = "Winner: Player 2!"
-        }
-    }
-}
 
 
 
@@ -129,3 +107,25 @@ for (let i = 0; i < circles.length; i++){
         }) 
         
     };
+
+    function checkWinner() {
+        winningCombos.forEach((space, idx) => {
+            const circle1 = circles[space,[idx]]
+            // console.log(circle1)
+    
+        })
+        for (let i = 0; i < winningCombos.length; i++){
+            const circle1 = circles[winningCombos[i][0]]
+            console.log(circle1)
+            const circle2 = circles[winningCombos[i][1]]
+            const circle3 = circles[winningCombos[i][2]]
+            const circle4 = circles[winningCombos[i][3]]
+    
+            if (circle1.classList.contains('player1') && circle2.classList.contains('player1') && circle3.classList.contains('player1') && circle4.classList.contains('player1')) {
+                message.innerHTML = "Winner: Player 1!"
+            } else if (circle1.classList.contains('player2') && circle2.classList.contains('player2') && circle3.classList.contains('player2') && circle4.classList.contains('player2')){
+                message.innerHTML = "Winner: Player 2!"
+            }
+        }
+    }
+    
