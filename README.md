@@ -9,9 +9,10 @@
 
 *  Each player has one move per turn
 
-*  To win, a player must connect 4 of the same colored discs in a row
+*  To win, a player must connect 4 of the same colored discs in a row either vertically, horizontally, or diagonally
 
-*  Players can win either 4-in-a-row vertically, horizontally, or diagonally
+<!-- 
+*  Players can win either 4-in-a-row vertically, horizontally, or diagonally -->
 
 *  Once a player wins, players can click on the restart button to play again
 
