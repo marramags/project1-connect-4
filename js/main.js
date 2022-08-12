@@ -1,6 +1,6 @@
 const circles = document.querySelectorAll('.gameBoard div');
 const message = document.getElementById('message');
-const h3 = document.querySelector('h3');
+const turnMessage = document.querySelector('.turn-message');
 const currPlayer = document.getElementById('currPlayer')
 const button = document.querySelector('.restartBtn');
 button.addEventListener('click', restart);
@@ -125,9 +125,11 @@ for (let i = 0; i < circles.length; i++){
             const circle4 = circles[winningCombos[i][3]]
     
             if (circle1.classList.contains('player1') && circle2.classList.contains('player1') && circle3.classList.contains('player1') && circle4.classList.contains('player1')) {
-                message.innerHTML = "Winner: Player 1!"
+                turnMessage.innerHTML = "Winner: Player 1!"
+                // message.innerHTML = "Winner: Player 1!"
             } else if (circle1.classList.contains('player2') && circle2.classList.contains('player2') && circle3.classList.contains('player2') && circle4.classList.contains('player2')){
-                message.innerHTML = "Winner: Player 2!"
+                turnMessage.innerHTML = "Winner: Player 2!"
+                // message.innerHTML = "Winner: Player 2!"
             }
         }
     }
