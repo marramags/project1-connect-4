@@ -1,7 +1,11 @@
 // alert('I can do this!')
 const circles = document.querySelectorAll('.gameBoard div');
+
+const test = document.querySelectorAll('.test')
+console.log(test);
 const message = document.getElementById('message');
 const currPlayer = document.getElementById('currPlayer')
+const button = document.querySelector('button');
 let playerTurn = 1;
 
 const winningCombos =[
@@ -83,10 +87,8 @@ const winningCombos =[
     [20, 26, 32, 38]
 ]
 
-
-
-
-
+startGame();
+function startGame() {
 for (let i = 0; i < circles.length; i++){
         circles[i].addEventListener('click', () => {
         if (circles[i +7].classList.contains('filled') && !circles[i].classList.contains('filled')) {
@@ -107,6 +109,7 @@ for (let i = 0; i < circles.length; i++){
         }) 
         
     };
+}
 
     function checkWinner() {
         winningCombos.forEach((space, idx) => {
@@ -129,3 +132,7 @@ for (let i = 0; i < circles.length; i++){
         }
     }
     
+    function reset() {
+        startGame()
+
+    }
