@@ -60,47 +60,41 @@ const winningCombos =[
     [37, 38, 39, 40],
     [38, 39, 40, 41],
 
-    [14, 22, 30, 38],
-    [7, 15, 23, 31],
-    [15, 23, 31, 39],
-    [0, 8, 16, 24],
-    [8, 16, 24, 32],
-    [16, 24, 32, 40],
-    [1, 9, 17, 25],
-    [9, 17, 25, 33],
-    [17, 25, 33, 41],
-    [2, 10, 18, 26],
-    [10, 18, 26, 34]
-    [3, 11, 19, 27],
+    [38, 30, 22, 14],
+    [39, 31, 23, 15],
+    [31, 23, 15, 7],
+    [40, 32, 24, 16],
+    [32, 24, 16, 8],
+    [24, 16, 8, 0],
+    [41, 33, 25, 17],
+    [33, 25, 17, 9],
+    [25, 17, 9, 1],
 
-    [21, 15, 9, 3],
+    // [14, 22, 30, 38],
+    // [7, 15, 23, 31],
+    // [15, 23, 31, 39],
+    // [0, 8, 16, 24],
+    // [8, 16, 24, 32],
+    // [16, 24, 32, 40],
+    // [1, 9, 17, 25],
+    // [9, 17, 25, 33],
+    // [17, 25, 33, 41],
+    // [2, 10, 18, 26],
+    // [10, 18, 26, 34]
+    // [3, 11, 19, 27],
+
+    // [21, 15, 9, 3],
+    // [28, 22, 16, 10],
     // [22, 16, 10, 4],
-    [28, 22, 16, 10],
-    [22, 16, 10, 4],
-    [35, 29, 23, 17],
-    [29, 23, 17, 11],
-    [23, 17, 11, 5],
-    // [23, 17, 11, 65],
+    // [35, 29, 23, 17],
     // [29, 23, 17, 11],
-    [36, 30, 24, 18],
-    [30, 24, 18, 12],
-    [24, 18, 12, 6],
-    [37, 31, 25, 19],
-    [31, 25, 19, 13],
-    [38, 32, 26, 20]
-
-    // [3, 9, 15, 21],
-    // [4, 10, 16, 22],
-    // [10, 16, 22, 28],
-    // [5, 11, 17, 23,],
-    // [11, 17, 23, 29],
-    // [17, 23, 29, 35],
-    // [6, 12, 18, 24],
-    // [12, 18, 24, 30],
-    // [18, 24, 30, 36],
-    // [13, 19, 25, 31],
-    // [19, 25, 31, 37],
-    // [20, 26, 32, 38]
+    // [23, 17, 11, 5],
+    // [36, 30, 24, 18],
+    // [30, 24, 18, 12],
+    // [24, 18, 12, 6],
+    // [37, 31, 25, 19],
+    // [31, 25, 19, 13],
+    // [38, 32, 26, 20]
 ]
 
 startGame();
@@ -120,13 +114,13 @@ for (let i = 0; i < circles.length; i++){
                 currPlayer.innerHTML = playerTurn
             }
         } 
-        checkWinner()  
-    });
+        checkWinner() 
+    })
+    
     };
- };
+}
 
     function checkWinner() {
-        hideMessage()
         // winningCombos.forEach((space, idx) => {
         //     const circle1 = circles[space,[idx]]
     
@@ -143,7 +137,6 @@ for (let i = 0; i < circles.length; i++){
             } else if (circle1.classList.contains('player2') && circle2.classList.contains('player2') && circle3.classList.contains('player2') && circle4.classList.contains('player2')){
                 turnMessage.innerHTML = "Player 2 Wins!"
                 clicksEnd()
-
             }
         }
     }
@@ -152,15 +145,6 @@ for (let i = 0; i < circles.length; i++){
         circles.forEach(circle => {
             circle.classList.add('filled');
         })
-    }
-
-    function hideMessage() {
-        currPlayer.innerHTML = playerTurn
-
-        // message.innerHTML = '';
-        // document.getElementById("message").onclick = function() {
-        //     document.getElementById("message").style.display = "none";
-        // }
     }
     
     function restart() {
