@@ -1,5 +1,6 @@
 const circles = document.querySelectorAll('.gameBoard div');
 const message = document.getElementById('message');
+const h3 = document.querySelector('h3');
 const currPlayer = document.getElementById('currPlayer')
 const button = document.querySelector('.restartBtn');
 button.addEventListener('click', restart);
@@ -101,8 +102,9 @@ for (let i = 0; i < circles.length; i++){
                 playerTurn = 1
                 currPlayer.innerHTML = playerTurn
             }
-         } else
-            // message.innerHTML = "Oops, can't place your move here! Try another move!"
+        //  } else
+        //     message.innerHTML = "Oops, can't place your move here! Try another move!"
+        }
             checkWinner()   
         }) 
         
