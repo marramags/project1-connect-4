@@ -3,10 +3,10 @@
   }
 
   body {
-    justify-items: center;
 
-    /* background-image: linear-gradient(to right top, #00c9b6, #35d0e0, #78d5f9, #b0d8ff, #daddff, #daddff, #daddff, #daddff, #b0d8ff, #78d5f9, #35d0e0, #00c9b6); */
-    /* background-repeat:no-repeat */
+    background-image: linear-gradient(to right top, #00c9b6, #35d0e0, #78d5f9, #b0d8ff, #daddff, #daddff, #daddff, #daddff, #b0d8ff, #78d5f9, #35d0e0, #00c9b6);
+    background-size: cover;
+    background-repeat:no-repeat
 }
 
 h1 {
