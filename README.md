@@ -15,4 +15,5 @@
 
 *  Once a player wins, players can click on the restart button to play again
 
+![This is an image](https://i.imgur.com/MsyYZjq.png)
 
