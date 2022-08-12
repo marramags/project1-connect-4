@@ -126,14 +126,21 @@ for (let i = 0; i < circles.length; i++){
     
             if (circle1.classList.contains('player1') && circle2.classList.contains('player1') && circle3.classList.contains('player1') && circle4.classList.contains('player1')) {
                 turnMessage.innerHTML = "Winner: Player 1!"
-                circles = null;
+                circles[i].addEventListener('click', clicksEnd)
                 // message.innerHTML = "Winner: Player 1!"
             } else if (circle1.classList.contains('player2') && circle2.classList.contains('player2') && circle3.classList.contains('player2') && circle4.classList.contains('player2')){
                 turnMessage.innerHTML = "Winner: Player 2!"
-                circles = null;
+                circles[i].addEventListener('click', clicksEnd)
+                // circles = null;
                 // message.innerHTML = "Winner: Player 2!"
             }
         }
+    }
+
+    function clicksEnd(){
+        circles.forEach(circle => {
+            circle.classList.add('filled');
+        })
     }
     
     function restart() {
