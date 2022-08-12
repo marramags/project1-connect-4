@@ -7,6 +7,14 @@
 
 }
 
+h1 {
+    color: #9667AB;
+    text-align: center;
+    font-size: 80px;
+    margin: 10px 0 0 0;
+    font-family: 'Righteous', cursive;
+}
+
 .message{
 
 }
