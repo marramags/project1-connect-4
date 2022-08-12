@@ -73,18 +73,34 @@ const winningCombos =[
     [10, 18, 26, 34]
     [3, 11, 19, 27],
 
-    [3, 9, 15, 21],
-    [4, 10, 16, 22],
-    [10, 16, 22, 28],
-    [5, 11, 17, 23,],
-    [11, 17, 23, 29],
-    [17, 23, 29, 35],
-    [6, 12, 18, 24],
-    [12, 18, 24, 30],
-    [18, 24, 30, 36],
-    [13, 19, 25, 31],
-    [19, 25, 31, 37],
-    [20, 26, 32, 38]
+    [21, 15, 9, 3],
+    // [22, 16, 10, 4],
+    [28, 22, 16, 10],
+    [22, 16, 10, 4],
+    [35, 29, 23, 17],
+    [29, 23, 17, 11],
+    [23, 17, 11, 5],
+    // [23, 17, 11, 65],
+    // [29, 23, 17, 11],
+    [36, 30, 24, 18],
+    [30, 24, 18, 12],
+    [24, 18, 12, 6],
+    [37, 31, 25, 19],
+    [31, 25, 19, 13],
+    [38, 32, 26, 20]
+
+    // [3, 9, 15, 21],
+    // [4, 10, 16, 22],
+    // [10, 16, 22, 28],
+    // [5, 11, 17, 23,],
+    // [11, 17, 23, 29],
+    // [17, 23, 29, 35],
+    // [6, 12, 18, 24],
+    // [12, 18, 24, 30],
+    // [18, 24, 30, 36],
+    // [13, 19, 25, 31],
+    // [19, 25, 31, 37],
+    // [20, 26, 32, 38]
 ]
 
 startGame();
@@ -111,13 +127,12 @@ for (let i = 0; i < circles.length; i++){
 
     function checkWinner() {
         hideMessage()
-        winningCombos.forEach((space, idx) => {
-            const circle1 = circles[space,[idx]]
+        // winningCombos.forEach((space, idx) => {
+        //     const circle1 = circles[space,[idx]]
     
-        })
+        // })
         for (let i = 0; i < winningCombos.length; i++){
             const circle1 = circles[winningCombos[i][0]]
-            console.log(circle1)
             const circle2 = circles[winningCombos[i][1]]
             const circle3 = circles[winningCombos[i][2]]
             const circle4 = circles[winningCombos[i][3]]
