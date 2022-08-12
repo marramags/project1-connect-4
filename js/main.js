@@ -137,6 +137,6 @@ function clicksEnd() {
 }
 
 function restart() {
-  window.location.reload(true);
+  location.reload(true);
   startGame();
 }
