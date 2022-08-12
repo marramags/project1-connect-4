@@ -75,12 +75,12 @@ button {
 }
 
 .player1 {
-    background-color: darkseagreen;
+    background-color: #4FD2EA;
     border-radius: 50%;
 }
 
 .player2 {
-    background-color: gold;
+    background-color: #BD7BC8;
     border-radius: 50%;
 
 }
