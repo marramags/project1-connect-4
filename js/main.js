@@ -102,8 +102,7 @@ for (let i = 0; i < circles.length; i++){
                 playerTurn = 1
                 currPlayer.innerHTML = playerTurn
             }
-        //  } else
-        //     message.innerHTML = "Oops, can't place your move here! Try another move!"
+
         }
             checkWinner()   
         }) 
@@ -114,7 +113,6 @@ for (let i = 0; i < circles.length; i++){
     function checkWinner() {
         winningCombos.forEach((space, idx) => {
             const circle1 = circles[space,[idx]]
-            // console.log(circle1)
     
         })
         for (let i = 0; i < winningCombos.length; i++){
@@ -126,13 +124,11 @@ for (let i = 0; i < circles.length; i++){
     
             if (circle1.classList.contains('player1') && circle2.classList.contains('player1') && circle3.classList.contains('player1') && circle4.classList.contains('player1')) {
                 turnMessage.innerHTML = "Winner: Player 1!"
-                circles[i].addEventListener('click', clicksEnd)
-                // message.innerHTML = "Winner: Player 1!"
+                clicksEnd()
             } else if (circle1.classList.contains('player2') && circle2.classList.contains('player2') && circle3.classList.contains('player2') && circle4.classList.contains('player2')){
                 turnMessage.innerHTML = "Winner: Player 2!"
-                circles[i].addEventListener('click', clicksEnd)
-                // circles = null;
-                // message.innerHTML = "Winner: Player 2!"
+                clicksEnd()
+
             }
         }
     }
