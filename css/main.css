@@ -7,12 +7,11 @@ html {
 }
 
 body {
-    /* height: 100%;
-    width: 100%; */
+    height: 100%;
+    width: 100%;
     background-image: linear-gradient(to right top, #00c9b6, #35d0e0, #78d5f9, #b0d8ff, #daddff, #daddff, #daddff, #daddff, #b0d8ff, #78d5f9, #35d0e0, #00c9b6);
     background-size: cover;
     background-repeat:no-repeat;
-    /* position: relative; */
 
 }
 
@@ -101,7 +100,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto;
-    /* border-radius: 5%; */
 
 }
 
