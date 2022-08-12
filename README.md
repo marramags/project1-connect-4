@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Connect Four
 ### [Play the game!](https://eclectic-torrone-49648b.netlify.app/)
 ### [Wireframe](https://whimsical.com/connect-four-6aFKyW3WMR46TNWLzs4zeL)
@@ -14,3 +15,9 @@
 *  Players can be on the offensive or defensive.
 
 *  The game ends when there is a 4-in-a-row
+=======
+# Connect 4
+
+## [Play the game!](https://eclectic-torrone-49648b.netlify.app/)
+## [Wireframe](https://whimsical.com/connect-four-6aFKyW3WMR46TNWLzs4zeL)
+>>>>>>> 8fb3f2eb427a3b87a31d9196e60e583aed726bb5
