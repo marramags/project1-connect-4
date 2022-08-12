@@ -16,5 +16,16 @@
 
 *  Once a player wins, players can click on the restart button to play again
 
+
 ![This is an image](https://i.imgur.com/MsyYZjq.png)
 
+### Prospective Additions:
+*  Pointers above the gameboard to add players selected move (gravity)
+OR a message that appears/disappears if a player cannot click in that grid
+*   A info message/button that informs players of the rules 
+*   Players score for Rounds options
+
+### Technologies Used
+*  HTML
+*  CSS
+*  JavaScript
