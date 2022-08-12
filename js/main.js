@@ -102,7 +102,6 @@ for (let i = 0; i < circles.length; i++){
                 playerTurn = 1
                 currPlayer.innerHTML = playerTurn
             }
-
         }
             checkWinner()   
         }) 
@@ -123,10 +122,10 @@ for (let i = 0; i < circles.length; i++){
             const circle4 = circles[winningCombos[i][3]]
     
             if (circle1.classList.contains('player1') && circle2.classList.contains('player1') && circle3.classList.contains('player1') && circle4.classList.contains('player1')) {
-                turnMessage.innerHTML = "Winner: Player 1!"
+                turnMessage.innerHTML = "Player 1 Wins!"
                 clicksEnd()
             } else if (circle1.classList.contains('player2') && circle2.classList.contains('player2') && circle3.classList.contains('player2') && circle4.classList.contains('player2')){
-                turnMessage.innerHTML = "Winner: Player 2!"
+                turnMessage.innerHTML = "Player 2 Wins!"
                 clicksEnd()
 
             }
@@ -142,6 +141,4 @@ for (let i = 0; i < circles.length; i++){
     function restart() {
         window.location.reload(true);
         startGame()
-
-
     }
