@@ -16,7 +16,8 @@
 *  Once a player wins, players can click on the restart button to play again
 
 
-![This is an image](https://i.imgur.com/MsyYZjq.png)
+![In-play Image](https://i.imgur.com/MsyYZjq.png)
+![Winning Image](https://i.imgur.com/USKQPe5.png)
 
 ### Prospective Additions:
 *  Pointers above the gameboard to add players selected move (gravity)
