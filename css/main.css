@@ -3,7 +3,7 @@
   }
 
   body {
-
+    height:auto;
     background-image: linear-gradient(to right top, #00c9b6, #35d0e0, #78d5f9, #b0d8ff, #daddff, #daddff, #daddff, #daddff, #b0d8ff, #78d5f9, #35d0e0, #00c9b6);
     background-size: cover;
     background-repeat:no-repeat
@@ -37,15 +37,25 @@ h3 {
     justify-content: center;
     align-items: center;
     margin: 15px 0 20px 0;
+    color: #9667AB;
+}
+
+button {
+    background-color: #9667AB;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 15%;
+
 }
 
 .gameBoard {
-    border: 1px solid black;
+    border: 4px solid #9667AB;
     height: 360px;
     width: 420px;
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto;
+    border-radius: 5%;
 
 }
 

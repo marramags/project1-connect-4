@@ -102,7 +102,7 @@ for (let i = 0; i < circles.length; i++){
                 currPlayer.innerHTML = playerTurn
             }
          } else
-            message.innerHTML = "Oops, can't place your move here! Try another move!"
+            // message.innerHTML = "Oops, can't place your move here! Try another move!"
             checkWinner()   
         }) 
         
