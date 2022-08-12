@@ -1,12 +1,14 @@
 // alert('I can do this!')
 const circles = document.querySelectorAll('.gameBoard div');
 
-const test = document.querySelectorAll('.test')
-console.log(test);
+// const test = document.querySelectorAll('.test')
 const message = document.getElementById('message');
 const currPlayer = document.getElementById('currPlayer')
 const button = document.querySelector('button');
+button.addEventListener('click', restart);
+
 let playerTurn = 1;
+let board;
 
 const winningCombos =[
     [0, 7, 14, 21],
@@ -109,7 +111,7 @@ for (let i = 0; i < circles.length; i++){
         }) 
         
     };
-}
+ }
 
     function checkWinner() {
         winningCombos.forEach((space, idx) => {
@@ -132,7 +134,9 @@ for (let i = 0; i < circles.length; i++){
         }
     }
     
-    function reset() {
+    function restart() {
+        window.location.reload(true);
         startGame()
+
 
     }
