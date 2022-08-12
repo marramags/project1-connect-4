@@ -64,12 +64,13 @@ const winningCombos =[
     [7, 15, 23, 31],
     [15, 23, 31, 39],
     [0, 8, 16, 24],
+    [8, 16, 24, 32],
     [16, 24, 32, 40],
     [1, 9, 17, 25],
     [9, 17, 25, 33],
     [17, 25, 33, 41],
-    [2, 10, 18, 26, 34],
-    [10, 18, 26, 34],
+    [2, 10, 18, 26],
+    [10, 18, 26, 34]
     [3, 11, 19, 27],
 
     [3, 9, 15, 21],
@@ -102,14 +103,14 @@ for (let i = 0; i < circles.length; i++){
                 playerTurn = 1
                 currPlayer.innerHTML = playerTurn
             }
-        }
-            checkWinner()   
-        }) 
-        
+        } 
+        checkWinner()  
+    });
     };
- }
+ };
 
     function checkWinner() {
+        hideMessage()
         winningCombos.forEach((space, idx) => {
             const circle1 = circles[space,[idx]]
     
@@ -136,6 +137,15 @@ for (let i = 0; i < circles.length; i++){
         circles.forEach(circle => {
             circle.classList.add('filled');
         })
+    }
+
+    function hideMessage() {
+        currPlayer.innerHTML = playerTurn
+
+        // message.innerHTML = '';
+        // document.getElementById("message").onclick = function() {
+        //     document.getElementById("message").style.display = "none";
+        // }
     }
     
     function restart() {
